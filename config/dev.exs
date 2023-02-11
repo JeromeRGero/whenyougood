@@ -27,8 +27,8 @@ config :whenyougood, WhenyougoodWeb.Endpoint,
   watchers: [
     npx: [
       "tailwindcss",
-      "--input=css\app.css",
-      "--output=..\priv\static\assets\app.css",
+      "--input=./css/app.css",
+      "--output=../priv/static/assets/app.css",
       "--postcss",
       "--watch",
       cd: Path.expand("../assets", __DIR__)
